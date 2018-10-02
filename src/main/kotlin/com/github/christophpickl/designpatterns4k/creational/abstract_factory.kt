@@ -8,8 +8,7 @@ interface Network
 class DevNetwork : Network
 class ProdNetwork : Network
 
-// alias the "abstract factory"
-interface Environment {
+interface Environment { // alias the "abstract factory"
     fun database(): Database
     fun network(): Network
 }
